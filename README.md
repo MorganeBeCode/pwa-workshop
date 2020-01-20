@@ -119,7 +119,7 @@ This tutorial is based on [this course](https://www.udemy.com/course/progressive
 
 - Let the new worker install (skip waiting). Reload, then go offline (checkbox in 'service workers'), reload again and the app shell should load perfectly with only the API requests failing.
 
-### At this point I already have an app that doesn't feel like a website anymore, with all its assets loading instantly and being accessible offline.
+#### At this point I already have an app that doesn't feel like a website anymore, with all its assets loading instantly and being accessible offline.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -328,7 +328,7 @@ So what I need, ideally, is to compare the pics that are going to be displayed i
 
 - And to test this, let's change the increment of picCount at the end of the loop, from 10 to 11, so that every pic but the first will change. Also change the service worker version to 1.2. Let it install (skip waiting), reload, refresh caches. There are still only 15 pics in the pics cache, but 14 of them have changed.
 
-### With the service worker now caching, serving and managing all of the app content, the only thing left to do is adding a Manifest, and this will truely be a PWA.
+#### With the service worker now caching, serving and managing all of the app content, the only thing left to do is adding a Manifest, and this will truely be a PWA.
 
 **[⬆ back to top](#table-of-contents)**
 
