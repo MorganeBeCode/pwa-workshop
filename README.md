@@ -1,6 +1,6 @@
 # Workshop - Upgrade a web app into a PWA
 
-To demonstrate this, I made a basic web app that fakes a chat using JSONPlaceholder. What it does is it requests the first 25 comments from this server.
+To demonstrate this, I made a basic web app that fakes a chat using JSONPlaceholder. What it does is it requests the first 15 comments from this server.
 
 Since it's not possible to actually create any new resource with this API, I'm faking this with a form that just adds the user's comment on top of the feed, provided we're not offline.
 
