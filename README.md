@@ -1,4 +1,4 @@
-# Upgrade a web app into a PWA
+# Workshop - Upgrade a web app into a PWA
 
 To demonstrate this, I made a basic web app that fakes a chat using JSONPlaceholder. What it does is it requests the first 25 comments from this server.
 
