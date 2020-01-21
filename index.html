@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chat</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=0, user-scalable=0"
+    />
+
+    <meta name="apple-mobile-web-app-title" content="Chat" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-startup-image" href="images/launch.png" />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="images/icons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/icons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="images/icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="images/icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="images/icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="images/icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/icons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/icons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/icons/favicon-128.png"
+      sizes="128x128"
+    />
+
+    <meta name="msapplication-TileColor" content="#2D91F8" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/icons/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="images/icons/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="images/icons/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="images/icons/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="images/icons/mstile-310x310.png"
+    />
+
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <script defer src="vendor/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <!-- Nav Header -->
+    <header class="navbar sticky-top navbar-expand bg-dark navbar-dark ">
+      <ul class="navbar-nav">
+        <!-- Logo -->
+        <li class="nav-item my-auto">
+          <img
+            src="images/logo.png"
+            alt="Chat"
+            width="60"
+            class="img-fluid navbar-brand mr-5"
+          />
+        </li>
+        <li class="nav-item my-auto">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item my-auto">
+          <a class="nav-link active" href="#">Chat</a>
+        </li>
+        <li class="nav-item my-auto">
+          <a class="nav-link" href="#">Log Out</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container p-1">
+      <div class="row">
+        <div
+          class="col-sm-12 offset-sm-0 col-md-8 offset-md-2 col-lg-6 offset-lg-3"
+        >
+          <!-- Form to write comment -->
+          <div class="card gedf-card mb-3">
+            <div class="card-header">
+              <ul
+                class="nav nav-tabs card-header-tabs"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="posts-tab"
+                    data-toggle="tab"
+                    href="#posts"
+                    role="tab"
+                    aria-controls="posts"
+                    aria-selected="true"
+                    >Make a publication</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="posts"
+                  role="tabpanel"
+                  aria-labelledby="posts-tab"
+                >
+                  <div class="form-group">
+                    <label class="sr-only" for="title">title</label>
+                    <input
+                      id="title"
+                      type="text"
+                      class="form-control"
+                      placeholder="Title"
+                    />
+                    <label class="sr-only" for="message">post</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      placeholder="What are you thinking?"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-toolbar justify-content-between">
+                <div class="btn-group">
+                  <button type="submit" id="share" class="btn btn-primary">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Error Alert -->
+          <div class="alert alert-danger text-center m-1" style="display:none;">
+            Could not send. You appear to be offline.
+          </div>
+          <!-- Template-->
+          <template id="template">
+            <div class="card gedf-card mb-3">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="mr-2">
+                      <img
+                        class="rounded-circle"
+                        width="70"
+                        src="images/no-image.png"
+                        alt="profile pic"
+                      />
+                    </div>
+                    <div class="ml-2">
+                      <div id="name" class="h5 m-0"></div>
+                      <div id="email" class="h7 text-muted"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p id="text" class="card-text"></p>
+              </div>
+            </div>
+          </template>
+          <!-- Feed -->
+          <div id="comments"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer fixed-bottom py-3 bg-dark">
+      <div class="container">
+        <span class="text-muted"
+          >Layout for feed from
+          <a href="https://bootsnipp.com">https://bootsnipp.com</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
