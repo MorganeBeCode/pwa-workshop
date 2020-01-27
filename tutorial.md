@@ -328,7 +328,7 @@ So what I need, ideally, is to compare the pics that are going to be displayed i
 
 - And to test this, let's change the increment of picCount at the end of the loop, from 10 to 11, so that every pic but the first will change. Also change the service worker version to 1.2. Let it install (skip waiting), reload, refresh caches. There are still only 15 pics in the pics cache, but 14 of them have changed.
 
-#### With the service worker now caching, serving and managing all of the app content, the only thing left to do is adding a Manifest, and this will truely be a PWA.
+#### With the service worker now caching, serving and managing all of the app content, the only thing left to do is adding a Manifest.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -361,3 +361,9 @@ Link the manifest in index.html:
 ```
 <link rel="manifest" href="manifest.json">
 ```
+
+Now the manifest will appear in the 'Application' tab, above Service Workers.
+
+If launched on a mobile phone, the app will prompt the user to install it on the home screen.
+
+The app can be tested with Lighthouse, in the 'Audits' tab of the inspector. Just check Progressive Web App as well as Performance.
