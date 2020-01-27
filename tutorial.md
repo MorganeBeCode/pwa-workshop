@@ -367,3 +367,5 @@ Now the manifest will appear in the 'Application' tab, above Service Workers.
 If launched on a mobile phone, the app will prompt the user to install it on the home screen.
 
 The app can be tested with Lighthouse, in the 'Audits' tab of the inspector. Just check Progressive Web App as well as Performance.
+
+**[⬆ back to top](#table-of-contents)**
